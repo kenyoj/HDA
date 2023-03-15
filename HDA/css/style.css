@@ -1,0 +1,244 @@
+/* 영문서체 */
+@font-face {
+    font-family: 'G';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 두꺼운 서체 */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+/* 공통 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    color: #111;
+}
+li,ul,ol{
+    list-style: none;
+}
+ul:after, li::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+    vertical-align: bottom;
+}
+.blind{
+    font-size: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.blank{
+    height: 300px;
+}
+.b_line{
+    border-bottom: 2px solid black;
+}
+.bold{
+    font-weight: bold;
+}
+.en{
+    font-family: "G";
+}
+.wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    
+}
+header{
+    height: 160px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+header .wrap li{
+    float: left;
+    font-family: "G";
+}
+header .wrap .tnb li{
+    margin: 0 10px;
+    font-size: 12px;
+}
+header .wrap .gnb li{
+    margin: 0 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+header .wrap .gnb li:last-child{
+    margin: 0;
+}
+header .wrap .tnb li:last-child{
+    margin: 0;
+}
+header .wrap .gnb{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+header .wrap .tnb{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header .wrap .gnb li:hover{
+    color: #f00;
+}
+/* main */
+#main{
+    background: url(../images/mainimg.jpg)  no-repeat center;
+    background-color: #eeeeee;
+    height: 480px;
+}
+#main article::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#main .article{
+    position: absolute;
+    top: 120px;
+    
+}
+#main .article h3{
+    font-size: 40px;
+    font-weight: 900;
+    padding:  20px 0;
+}
+/* sub */
+#sub{
+    height: 500px;
+    
+}
+#sub .wrap h3{
+    padding: 50px 0 30px 0;
+}
+#sub .wrap .cur ul{
+    width: 300px;
+}
+#sub .wrap .cur{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sub .wrap .cur ul::after{
+    display: none;
+}
+#sub .wrap .cur ul li p:first-of-type{
+    padding: 20px 0 20px;
+}
+#sub .wrap .cur ul li p:last-of-type{
+    padding: 0 0 20px;
+    color: #666;
+}
+#sub .por{
+    float: left;
+    width: 650px;
+    height: 200px;
+    background: url(../images/img4.jpg) no-repeat center;
+    padding: 40px 0;
+    font-size: 20px;
+}
+#sub .news{
+    font-size: 14px;
+    width: 300px;
+}
+#sub .news span:last-child{
+    padding-bottom: 100px;
+}
+#sub::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#sub .news{
+    float: right;
+}
+#sub .news ul{
+    border-bottom: 1px solid black;
+}
+#sub .news ul li{
+    float: left;
+    color: #666;
+}
+#sub .news ul li:last-child{
+    padding-bottom: 100px;
+}
+#con .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#con .cont ul li{
+    font-size: 14px; 
+}
+.under_line{
+    text-decoration: underline;
+}
+#con .cont ul{
+    border-bottom: 1px solid #999;
+    width: 300px;
+    
+}
+#con .b_line h3{
+    padding: 0 0 20px;
+}
+#con ul li:nth-child(3){
+    padding-bottom: 10px;
+}
+#con ul li:nth-child(4){
+    padding-bottom: 20px;
+}
+#con ul li:not(.under_line){
+    color: #666;
+}
+.blank1{
+    height: 400px;
+}
+/* footer */
+footer{
+    background-color: #000;
+    height: 165px;
+    color: #666;
+}
+
+footer address{
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.5;
+}
+footer .fnb li{
+    float: left;
+    padding: 30px 0;
+}
+footer .fnb li a::after{
+    content: "|";
+    padding: 0 10px;
+}
+footer .fnb li:last-child ::after{
+    display: none;
+}
+footer .link{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    text-align: right;
+    color: #fff;
+    font-size: 13px;
+}
+footer .link li{
+    padding: 5px 0;
+}
+address span:nth-of-type(4)::before, address span:nth-of-type(4)::after{
+    content: "|";
+    padding: 0 5px;
+}
